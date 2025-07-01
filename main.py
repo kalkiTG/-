@@ -1,3 +1,4 @@
+
 import os
 import re
 import sys
@@ -695,9 +696,11 @@ async def txt_handler(bot: Client, m: Message):
         cptoken = raw_text4
         pwtoken = raw_text4
         
-    await editable.edit(f"**Send the Video Thumb URL or send /d**")
-    try:
-        input6 = message = await bot.listen(editable.chat.id)
+    await editable.edit(f"`🔹Send ☞ Direct Thumb Photo\n"
+                        f"🔹Send ☞ Thumb URL for Thumbnail\n"
+                        f"🔹Send ☞ no for video format\n"
+                        f"🔹Send ☞ No for Document format`")
+    input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
     await editable.delete()
@@ -710,6 +713,7 @@ async def txt_handler(bot: Client, m: Message):
         thumb = "thumb.jpg"
     else:
         thumb = raw_text6
+
 
     await editable.edit("__**⚠️Provide the Channel ID or send /d__\n\n<blockquote><i>🔹 Make me an admin to upload.\n🔸Send /id in your channel to get the Channel ID.\n\nExample: Channel ID = -100XXXXXXXXXXX</i></blockquote>\n**")
     try:
