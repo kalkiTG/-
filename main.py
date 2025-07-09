@@ -878,7 +878,16 @@ async def txt_handler(bot: Client, m: Message):
                                 continue 
                         for msg in failure_msgs:
                             await msg.delete()
-                            
+                 
+               elif "youtu" in url:
+                    try:
+                        await bot.send_photo(chat_id=m.chat.id, photo=photoyt, caption=ccyt)
+                        count +=1
+                    except Exception as e:
+                        await m.reply_text(str(e))    
+                        time.sleep(1)    
+                        continue
+                        
                     else:
                         try:
                             cmd = f'yt-dlp -o "{name}.pdf" "{url}"'
