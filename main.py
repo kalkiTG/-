@@ -38,7 +38,6 @@ import aiofiles
 import zipfile
 import shutil
 import ffmpeg
-from future import annotations
 
 # Initialize the bot
 bot = Client(
