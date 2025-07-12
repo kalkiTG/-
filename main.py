@@ -826,12 +826,12 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'🪐Vid Id : {str(count).zfill(3)}\n\n**📝 Title :** {name1} \n\n<blockquote><b>💠 Course :</b> {b_name}</blockquote>\n\n**📥Downloded By-**<blockquote>{CR}</blockquote>\n'
-                cc1 = f'🪐Pdf Id : {str(count).zfill(3)}\n\n**✍🏻 Title :** {name1} \n\n<blockquote><b>💠 Course :</b> {b_name}</blockquote>\n\n**📥Downloaded By-**<blockquote>{CR}</blockquote>\n'
-                cczip = f'🪐Zip Id : {str(count).zfill(3)}\n\n**📝 Title :** {name1} \n\n<blockquote><b>💠 Course:</b> {b_name}</blockquote>\n\n**📥Downloaded By-**<blockquote>{CR}</blockquote>\n' 
-                ccimg = f'🪐Img Id : {str(count).zfill(3)}\n\n**📝 Title :** {name1}\n\n<blockquote><b>💠 Course :</b> {b_name}</blockquote>\n\n**📥 Downloaded By-**<blockquote>{CR}</blockquote>\n'
-                ccm = f'🎵Audio Id : {str(count).zfill(3)}\n\n** 📝 Title :** {name1}\n\n<blockquote><b>💠 Course :</b> {b_name}</blockquote>\n\n**📥Downloaded By-**<blockquote>{CR}</blockquote>\n'
-                cchtml = f'🌐Html Id : {str(count).zfill(3)}\n\n**📝 Title :** {name1}\n\n<blockquote><b>💠 Course :</b> {b_name}</blockquote>\n\n**📥 Downloaded By-**<blockquote>{CR}</blockquote>\n'
+                cc = f'🪐Vid Id : {str(count).zfill(3)}\n\n**📝 Title :** {name1} \n\n<blockquote><b>💠 Course :</b> {b_name}</blockquote>\n\n**Downloded By-**<blockquote>{CR}</blockquote>\n'
+                cc1 = f'🪐Pdf Id : {str(count).zfill(3)}\n\n**📝 Title :** {name1} \n\n<blockquote><b>💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**<blockquote>{CR}</blockquote>\n'
+                cczip = f'🪐Zip Id : {str(count).zfill(3)}\n\n**📝 Title :** {name1} \n\n<blockquote><b>💠 Course:</b> {b_name}</blockquote>\n\n**Downloaded By-**<blockquote>{CR}</blockquote>\n' 
+                ccimg = f'🪐Img Id : {str(count).zfill(3)}\n\n**📝 Title :** {name1}\n\n<blockquote><b>💠 Course :</b> {b_name}</blockquote>\n\n** Downloaded By-**<blockquote>{CR}</blockquote>\n'
+                ccm = f'🎵Audio Id : {str(count).zfill(3)}\n\n** 📝 Title :** {name1}\n\n<blockquote><b>💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**<blockquote>{CR}</blockquote>\n'
+                cchtml = f'🌐Html Id : {str(count).zfill(3)}\n\n**📝 Title :** {name1}\n\n<blockquote><b>💠 Course :</b> {b_name}</blockquote>\n\n** Downloaded By-**<blockquote>{CR}</blockquote>\n'
                   
                 if "drive" in url:
                     try:
@@ -977,9 +977,9 @@ async def txt_handler(bot: Client, m: Message):
     success_count = len(links) - failed_count
     video_count = v2_count + mpd_count + m3u8_count + yt_count + drm_count + zip_count + other_count
     if raw_text7 == "/d":
-        await bot.send_message(channel_id, f"<blockquote><b>🔅Successfully Done💞</b></blockquote>\n<blockquote><b>🔰 Course : {b_name}</b></blockquote>\n<blockquote>🔗 Total Links: {len(links)} \n🔸 Total Video : {video_count}\n  ✍🏻 Total PDF : {pdf_count}\n </blockquote>\n")
+        await bot.send_message(channel_id, f"<blockquote><b>🔅Successfully Done💞</b></blockquote>\n<blockquote><b>🔰 Course : {b_name}</b></blockquote>\n<blockquote>🔗 Total Links: {len(links)} \n🔸 Total Video : {video_count}\n  🔸 Total PDF : {pdf_count}\n </blockquote>\n")
     else:
-        await bot.send_message(channel_id, f"<blockquote><b>🔅Successfully Done💞</b></blockquote>\n<blockquote><b>🔰Course : {b_name}</b></blockquote>\n<blockquote>🔗 Total Links: {len(links)} \n 🔸 Total Video : {video_count}\n  ✍🏻 Total PDF : {pdf_count}\n</blockquote>\n")
+        await bot.send_message(channel_id, f"<blockquote><b>🔅Successfully Done💞</b></blockquote>\n<blockquote><b>🔰Course : {b_name}</b></blockquote>\n<blockquote>🔗 Total Links: {len(links)} \n 🔸 Total Video : {video_count}\n  🔸 Total PDF : {pdf_count}\n</blockquote>\n")
         await bot.send_message(m.chat.id, f"<blockquote><b>✅ Your Task is completed, please check your Set Channel📱</b></blockquote>")
 
 
