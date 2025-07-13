@@ -63,11 +63,11 @@ photozip = 'https://envs.sh/cD_.jpg'
 
 
 # Inline keyboard for start command
-BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/saini_contact_bot")]])
+BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://ShadowStarTG")]])
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/+3k-1zcJxINYwNGZl"),
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/ShadowStarTG"),
             InlineKeyboardButton(text="🛠️ Repo", url="https://github.com/nikhilsainiop/saini-txt-direct"),
         ],
     ]
@@ -458,7 +458,7 @@ async def start(bot, m: Message):
             f"🌟 Welcome {m.from_user.first_name}! 🌟\n\n" +
             f"Great! You are a premium member!\n"
             f"Use Command : /help to get started 🌟\n\n"
-            f"If you face any problem contact -  [{CREDIT}](https://t.me/saini_contact_bot)\n", disable_web_page_preview=True, reply_markup=BUTTONSCONTACT
+            f"If you face any problem contact -  [{CREDIT}](https://t.me/ShadowStarTG)\n", disable_web_page_preview=True, reply_markup=BUTTONSCONTACT
         )
     else:
         await asyncio.sleep(2)
@@ -864,12 +864,12 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{name1} [{res}p].mkv`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
-                cc1 = f'[📕]Pdf Id : {str(count).zfill(3)}\n**File Title :** `{name1}.pdf`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
-                cczip = f'[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{name1}.zip`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n' 
-                ccimg = f'[🖼️]Img Id : {str(count).zfill(3)}\n**Img Title :** `{name1}.jpg`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
-                ccm = f'[🎵]Audio Id : {str(count).zfill(3)}\n**Audio Title :** `{name1}.mp3`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
-                cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\n**Html Title :** `{name1}.html`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
+                cc = f'🔰Vid Id : {str(count).zfill(3)}\n\n**🔸Title :** {name1} \n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
+                cc1 = f'🔰Pdf Id : {str(count).zfill(3)}\n\n**🔸Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
+                cczip = f'🔰Zip Id : {str(count).zfill(3)}\n\n**🔸Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n' 
+                ccimg = f'🔰Img Id : {str(count).zfill(3)}\n\n**🔸Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
+                ccm = f'🔰Audio Id : {str(count).zfill(3)}\n\n**🔸Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
+                cchtml = f'🔰Html Id : {str(count).zfill(3)}\n\n**🔸Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
                   
                 if "drive" in url:
                     try:
