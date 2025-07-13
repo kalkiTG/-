@@ -21,8 +21,4 @@ services:
       #- key: WEBHOOK
         #sync: false
       - key: PORT
-        value: 8000 # Default port value, update if needed
-        - key: PYTHON_VERSION
-        value: 3.11.1
-        sync: false
-        
+        value: 8000  # Default port value, update if needed
