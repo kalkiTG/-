@@ -864,12 +864,12 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'🔰Vid Id : {str(count).zfill(3)}\n\n**🔸Title :** {name1} \n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
-                cc1 = f'🔰Pdf Id : {str(count).zfill(3)}\n\n**🔸Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
-                cczip = f'🔰Zip Id : {str(count).zfill(3)}\n\n**🔸Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n' 
-                ccimg = f'🔰Img Id : {str(count).zfill(3)}\n\n**🔸Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
-                ccm = f'🔰Audio Id : {str(count).zfill(3)}\n\n**🔸Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
-                cchtml = f'🔰Html Id : {str(count).zfill(3)}\n\n**🔸Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
+                cc = f'⛦Vid Id : {str(count).zfill(3)}\n\n**Title :** {name1} \n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
+                cc1 = f'⛦Pdf Id : {str(count).zfill(3)}\n\n**Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
+                cczip = f'⛦Zip Id : {str(count).zfill(3)}\n\n**Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n' 
+                ccimg = f'⛦Img Id : {str(count).zfill(3)}\n\n**Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
+                ccm = f'⛦Audio Id : {str(count).zfill(3)}\n\n**Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
+                cchtml = f'⛦Html Id : {str(count).zfill(3)}\n\n**Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
                   
                 if "drive" in url:
                     try:
